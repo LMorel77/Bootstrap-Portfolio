@@ -96,7 +96,6 @@ input[type="submit"]:hover {
     border-width: 1px;
     clear: both;
     flex: 1 0 auto; /* For sticky footer */
-    /* margin: auto; */
     overflow: auto;
 }
 #aboutMeHeader,
@@ -106,8 +105,6 @@ input[type="submit"]:hover {
     font-family: Georgia, Times, Times New Roman, serif;
     font-size: 26px;
     font-weight: bold;
-    /* line-height: 50px; /* Centering text vertically */
-    /* padding-top: 10px; */
 }
 #aboutMeImg {
     float: left;
@@ -131,7 +128,6 @@ input[type="submit"]:hover {
 }
 #contactFormWrapper {
     flex: 1 0 auto; /* For sticky footer */
-    /* margin: 0 auto; */
     overflow: auto;
 }
 #links {
@@ -175,11 +171,7 @@ input[type="submit"]:hover {
 }
 #navContent {
     height: 75px;
-    /* margin-left: 10%; */
-    /* margin-right: 10%; */
     padding: 0;
-    /* margin: 0 auto; */
-    /* width: 960px; */
 }
 #pagefooter {
     background: #777777;
@@ -200,11 +192,6 @@ input[type="submit"]:hover {
 }
 #pagefooter a:hover {
     color: #4aaaa5;
-}
-#portfolioRow {
-    clear: both;
-    overflow: auto;
-    position: relative;
 }
 #portfolioRow a img:hover {
     opacity: 0.3;

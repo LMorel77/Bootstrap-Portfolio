@@ -1,0 +1,77 @@
+a:link {
+    text-decoration: none;
+}
+html, body {
+    background-image: url("../images/halftone.png");
+    color: #777;
+    font-family: 'Arial', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    line-height: 150%;
+}
+hr {
+    border: solid;
+    border-color: lightgrey;
+    border-width: 1px;
+}
+#aboutMeHeader,
+#contactFormHeader,
+#portfolioHeader {
+    color: #4aaaa5;
+    font-family: Georgia, Times, Times New Roman, serif;
+    font-size: 26px;
+    font-weight: bold;
+    line-height: 50px; /* Centering text vertically */
+    margin: 0;
+    padding-top: 10px;
+}
+#aboutMeImg {
+    float: left;
+    padding-right: 15px;
+}
+#links {
+    background: #4aaaa5;
+    float: right;
+    height: 75px;
+    line-height: 75px;  /* Centering text vertically */
+    width: 225px;
+    word-spacing: 10px;
+}
+#links a {
+    color: #777777;
+}
+#links a:hover {
+    color: #4aaaa5;
+}
+#navContent {
+    /* padding: 0; */
+}
+.container-fluid {
+    height: 75px;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-right: 0;
+}
+.navbar {
+    background: #fff;
+}
+.navbar-brand {
+    background: #4aaaa5;
+    height: 75px;
+    padding: 0px 20px 0px 20px;
+}
+.navbar-default .navbar-brand {
+    color: #fff;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    font-size: 26px;
+    font-weight: bold;
+    line-height: 75px; /* Centering text vertically */
+}
+.navbar-right {
+    background: lightblue;
+    height: 75px;
+    line-height: 75px;
+    padding: 0;
+}
+.row {
+    background: #fff;
+    /* float: left; */
+}

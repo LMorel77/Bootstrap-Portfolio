@@ -1,0 +1,289 @@
+::placeholder {     /* Firefox Compatibility */
+    color: lightgray;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 14px;
+    opacity: 1;
+}
+:-ms-input-placeholder {     /* IE 10-11 Compatibility */
+    color: lightgray;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 14px;
+}
+::-ms-input-placeholder {     /* Edge Compatibility */
+    color: lightgray;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 14px;
+    opacity: 1;
+}
+a:link {
+    text-decoration: none;
+}
+footer a {
+    color: lightgray;
+}
+footer a:hover {
+    color: #4aaaa5;
+}
+html, body {
+    box-sizing: border-box;
+    background-image: url("../images/halftone.png");
+    color: #777777;
+    display: flex; /* For sticky footer */
+    flex-direction: column; /* For sticky footer */
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    height: 100%; /* For sticky footer */
+    line-height: 150%;
+}
+hr {
+    border: solid;
+    border-color: lightgrey;
+    border-width: 1px;
+    margin-bottom: 16px;
+    margin-top: 16px;
+}
+input[type=text]:focus {
+    outline-color: #4aaaa5;
+}
+input[type=text], select {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin: 8px 0;
+    padding: 8px 10px;
+    width: 100%;
+}
+#subject input[type=text], textarea {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 14px;
+    height: 125px;
+    padding-left: 10px;
+    padding-top: 8px;
+    resize: vertical;
+    width: 100%;
+}
+input[type=reset] {
+    background: #4aaaa5;
+    /* border: none; Looks nicer with border */
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 12px 20px;
+    width: 100px;
+}
+input[type="reset"]:hover {
+    opacity: 0.8;
+}
+input[type=submit] {
+    background: #4aaaa5;
+    /* border: none; Looks nicer with border */
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 10px;
+    padding: 12px 20px;
+    width: 100px;
+}
+input[type="submit"]:hover {
+    opacity: 0.8;
+}
+#aboutMe,
+#portfolio {
+    background: #ffffff;
+    border: solid;
+    border-color: lightgray;
+    border-width: 1px;
+    clear: both;
+    flex: 1 0 auto; /* For sticky footer */
+    /* margin: auto; */
+    overflow: auto;
+}
+#aboutMeHeader,
+#contactFormHeader,
+#portfolioHeader {
+    color: #4aaaa5;
+    font-family: Georgia, Times, Times New Roman, serif;
+    font-size: 26px;
+    font-weight: bold;
+    /* line-height: 50px; /* Centering text vertically */
+    /* padding-top: 10px; */
+}
+#aboutMeImg {
+    float: left;
+    padding-right: 20px;
+}
+#contactForm {
+    background: #ffffff;
+    border: none;
+    color: #777777;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    padding-top: 20px;
+}
+#contactFormColumnPadding {
+    padding-left:75px;
+}
+#contactFormMessage {
+    height: 50px;
+}
+#contactFormPanelBodyPadding {
+    padding: 0px 15px 15px 15px;
+}
+#contactFormWrapper {
+    flex: 1 0 auto; /* For sticky footer */
+    /* margin: 0 auto; */
+    overflow: auto;
+}
+#links {
+    background: #ffffff;
+    line-height: 75px;  /* Centering text vertically */
+    margin: 0 auto;
+    word-spacing: 10px;
+}
+#links a {
+    color: #777777;
+}
+#links a:hover {
+    color: #4aaaa5;
+}
+#logo {
+    background: #4aaaa5;
+    float: left;
+    height: 75px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+#logoHeader {
+    background: #4aaaa5;
+    color: white;
+    height: 75px;
+    margin: auto;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    font-size: 26px;
+    font-weight: bold;
+    line-height: 75px; /* Centering text vertically */
+    padding: 0px 20px 0px 20px;
+}
+#navBar {
+    background: #ffffff;
+    border-bottom-color: lightgray;
+    border-bottom-width: 2px;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    min-height: 77px;
+}
+#navContent {
+    height: 75px;
+    /* margin-left: 10%; */
+    /* margin-right: 10%; */
+    padding: 0;
+    /* margin: 0 auto; */
+    /* width: 960px; */
+}
+#pagefooter {
+    background: #777777;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    border-top: solid;
+    border-color: #4aaaa5;
+    border-radius: 0;
+    border-width: 2px;
+    color: lightgray;
+    font-size: 12px;
+    margin-bottom: 0;
+    text-align: center;
+}
+#pagefooter a {
+    color: lightgray;
+}
+#pagefooter a:hover {
+    color: #4aaaa5;
+}
+#portfolioRow {
+    clear: both;
+    overflow: auto;
+    position: relative;
+}
+#portfolioRow a img:hover {
+    opacity: 0.3;
+}
+#socialMediaPanel {
+    background: #ffffff;
+    border: none;
+    padding-bottom: 0px;
+    padding-top: 18px;
+    text-align: center;
+}
+#socialMediaPanel hr {
+    margin-bottom: 14px;
+    margin-top: 14px;
+}
+#socialMediaPanelLinks {
+    padding-bottom: 15px;
+    text-align: center;
+    word-spacing: 10px;
+}
+#socialMediaPanelLinks a img {
+    border-radius:10px; /* Rounding out the image edges */
+}
+#socialMediaPanelLinks a img:hover {
+    opacity: 0.3;
+}
+#socialMediaPanelHeader {
+    color: #4aaaa5;
+    font-family: Georgia, Times, Times New Roman, serif;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 30px; /* Centering text vertically */
+}
+#socialMediaPanelBodyPadding {
+    padding: 0;
+}
+.container-fluid {
+    background: #ffffff;
+    height: 75px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.imageLabelBox{
+    background: #4aaaa5;
+    color: #ffffff;
+    line-height: 40px; /* Centering text vertically */
+    text-align: center;
+    width: 300px;
+}
+.imageLabel1{
+    color: #ffffff;
+    position: absolute;
+    top: 150px;
+}
+.imageLabel2{
+    position: absolute;
+    top: 150px;
+}
+.images {
+    float: left;
+    height:200px;
+    width: 300px;
+}
+.pagefooter {
+    background: #777777;
+    border-top: solid;
+    border-color: #4aaaa5;
+    border-width: 3px;
+    color: lightgray;
+    flex-shrink: 0; /* For sticky footer */
+    font-size: 12px;
+    line-height: 40px;  /* Centering text vertically */
+    text-align: center;
+}
+.portfolioRow {
+    clear: both;
+    overflow: auto;
+    position: relative;
+}
+.portfolioRow a img:hover {
+    opacity: 0.3;
+}

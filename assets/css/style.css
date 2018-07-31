@@ -1,83 +1,203 @@
-::placeholder {     /* Firefox Compatibility */
-    color: lightgray;
-    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-    font-size: 14px;
-    opacity: 1;
-}
-:-ms-input-placeholder {     /* IE 10-11 Compatibility */
-    color: lightgray;
-    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-    font-size: 14px;
-}
-::-ms-input-placeholder {     /* Edge Compatibility */
-    color: lightgray;
-    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-    font-size: 14px;
-    opacity: 1;
-}
-a:link {
-    text-decoration: none;
-}
-footer a {
-    color: lightgray;
-}
-footer a:hover {
-    color: #4aaaa5;
-}
+/* General Styling */
+
 html, body {
     box-sizing: border-box;
     background-image: url("../images/halftone.png");
     color: #777777;
-    display: flex; /* For sticky footer */
-    flex-direction: column; /* For sticky footer */
+    display: flex; /* Sticky footer */
+    flex-direction: column; /* Sticky footer */
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-    height: 100%; /* For sticky footer */
+    height: 100%; /* Sticky footer */
     line-height: 150%;
 }
+
+a {
+    color: white;
+}
+
+a:hover {
+    color: lightgray;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+
+/* Nav Styling */
+
+#navBar {
+    background: brown;
+    border-bottom: 2px solid lightgray;
+    height: 85px;
+    position: fixed;
+    top: 0;
+    transition: top 0.3s;
+    width: 100%;
+    z-index: 1;
+}
+
+#devName {
+    float: left;
+}
+
+#navBar h1 {
+    color: white;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    font-weight: bold;
+    line-height: 83px;
+    margin: 0 0 0 50px; /* Altering default h1 margins */
+}
+
+#navLinks {
+    float: right;
+    line-height: 83px;
+    margin-right: 50px;
+    word-spacing: 30px;
+}
+
+#navLinks a {
+    color: white;
+    font-size: 15px;
+}
+
+#navLinks a:hover {
+    color: lightgray;
+}
+
+
+/* Main Content General Styling */
+
+.contentWrapper {
+    background: white;
+    border: 1px solid lightgray;
+    clear: both;
+    flex: 1 0 auto; /* Sticky footer */
+    margin: 135px 10% 30px;
+}
+
+.contactInfoWrapper {
+    flex: 1 0 auto; /* Sticky footer */
+    margin-bottom: 30px;
+    margin-top: 135px;
+}
+
+#aboutMeHeader,
+#contactPanelTitle,
+#portfolioHeader {
+    color: brown;
+    font-family: Georgia, Times, Times New Roman, serif;
+    font-size: 26px;
+    font-weight: bold;
+}
+
 hr {
-    border: solid;
-    border-color: lightgrey;
-    border-width: 1px;
-    margin-bottom: 16px;
-    margin-top: 16px;
+    border: 1px solid lightgray;
 }
-input[type=text]:focus {
-    outline-color: #4aaaa5;
+
+
+/* 'About Me' Page Styling */
+
+#aboutMeImg {
+    border-radius: 25px;
+    float: left;
+    height: 300px;
+    margin-right: 20px;
+    width: 400px;
 }
-input[type=text], select {
+
+
+/* 'Portfolio' Page Styling */
+
+.projectWrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.project {
+    float: left;
+    margin: 0 10px 20px;
+}
+
+.project a:hover {
+    opacity: 0.3;
+}
+
+.images {
+    border-radius: 20px 20px 0 0;
+    height:175px;
+    width: 275px;
+}
+
+.imageLabel{
+    background: brown;
+    border-radius: 0 0 20px 20px;
+    color: #ffffff;
+    font-size: 15px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    width: 275px;
+}
+
+
+/* Contact Page Styling */
+
+#contactPanelHeading {
+    background: #ffffff;
+    border: none;
+    padding-top: 20px;
+}
+
+#contactPanelBody {
+    padding: 0px 15px 15px 15px;
+}
+
+label {
+    display: inline-block;
+    width: 22%;
+}
+
+input {
+    margin: 0 0 15px;
+}
+
+input:hover {
+    opacity: 0.8;
+}
+
+input[type=text] {
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
-    margin: 8px 0;
     padding: 8px 10px;
-    width: 100%;
+    width: 77%;
 }
-#subject input[type=text], textarea {
+
+input[type=text]:focus {
+    outline-color: brown;
+}
+
+textarea {
     border: 1px solid #ccc;
     border-radius: 4px;
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     font-size: 14px;
     height: 125px;
-    padding-left: 10px;
-    padding-top: 8px;
-    resize: vertical;
+    margin-bottom: 20px;
+    padding: 8px 10px;
+    resize: none;
     width: 100%;
 }
-input[type=reset] {
-    background: #4aaaa5;
-    /* border: none; Looks nicer with border */
-    color: white;
-    cursor: pointer;
-    font-size: 16px;
-    padding: 12px 20px;
-    width: 100px;
+
+textarea:focus {
+    outline-color: brown;
 }
-input[type="reset"]:hover {
-    opacity: 0.8;
-}
+
 input[type=submit] {
-    background: #4aaaa5;
-    /* border: none; Looks nicer with border */
+    background: brown;
+    border-radius: 25px;
     color: white;
     cursor: pointer;
     font-size: 16px;
@@ -85,117 +205,22 @@ input[type=submit] {
     padding: 12px 20px;
     width: 100px;
 }
-input[type="submit"]:hover {
-    opacity: 0.8;
-}
-#aboutMe,
-#portfolio {
-    background: #ffffff;
-    border: solid;
-    border-color: lightgray;
-    border-width: 1px;
-    clear: both;
-    flex: 1 0 auto; /* For sticky footer */
-    overflow: auto;
-}
-#aboutMeHeader,
-#contactFormHeader,
-#portfolioHeader {
-    color: #4aaaa5;
-    font-family: Georgia, Times, Times New Roman, serif;
-    font-size: 26px;
-    font-weight: bold;
-}
-#aboutMeImg {
-    float: left;
-    padding-right: 20px;
-}
-#contactForm {
-    background: #ffffff;
-    border: none;
-    color: #777777;
-    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-    padding-top: 20px;
-}
-#contactFormColumnPadding {
-    padding-left:75px;
-}
-#contactFormMessage {
-    height: 50px;
-}
-#contactFormPanelBodyPadding {
-    padding: 0px 15px 15px 15px;
-}
-#contactFormWrapper {
-    flex: 1 0 auto; /* For sticky footer */
-    overflow: auto;
-}
-#links {
-    background: #ffffff;
-    line-height: 75px;  /* Centering text vertically */
-    margin: 0 auto;
-    word-spacing: 10px;
-}
-#links a {
-    color: #777777;
-}
-#links a:hover {
-    color: #4aaaa5;
-}
-#logo {
-    background: #4aaaa5;
-    float: left;
-    height: 75px;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-#logoHeader {
-    background: #4aaaa5;
+
+input[type=reset] {
+    background: lightgray;
+    border-radius: 25px;
     color: white;
-    height: 75px;
-    margin: auto;
-    font-family: 'Georgia', Times, Times New Roman, serif;
-    font-size: 26px;
-    font-weight: bold;
-    line-height: 75px; /* Centering text vertically */
-    padding: 0px 20px 0px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 12px 20px;
+    width: 100px;
 }
-#navBar {
-    background: #ffffff;
-    border-bottom-color: lightgray;
-    border-bottom-width: 2px;
-    border-left: none;
-    border-right: none;
-    border-top: none;
-    min-height: 77px;
+
+#formButtons {
+    margin: 0 auto;
+    width: 218px;
 }
-#navContent {
-    height: 75px;
-    padding: 0;
-}
-#pagefooter {
-    background: #777777;
-    border-bottom: none;
-    border-left: none;
-    border-right: none;
-    border-top: solid;
-    border-color: #4aaaa5;
-    border-radius: 0;
-    border-width: 2px;
-    color: lightgray;
-    font-size: 12px;
-    margin-bottom: 0;
-    text-align: center;
-}
-#pagefooter a {
-    color: lightgray;
-}
-#pagefooter a:hover {
-    color: #4aaaa5;
-}
-#portfolioRow a img:hover {
-    opacity: 0.3;
-}
+
 #socialMediaPanel {
     background: #ffffff;
     border: none;
@@ -203,74 +228,47 @@ input[type="submit"]:hover {
     padding-top: 18px;
     text-align: center;
 }
+
 #socialMediaPanel hr {
     margin-bottom: 14px;
     margin-top: 14px;
 }
+
 #socialMediaPanelLinks {
     padding-bottom: 15px;
     text-align: center;
     word-spacing: 10px;
 }
+
 #socialMediaPanelLinks a img {
-    border-radius:10px; /* Rounding out the image edges */
+    border-radius:10px;
 }
+
 #socialMediaPanelLinks a img:hover {
     opacity: 0.3;
 }
+
 #socialMediaPanelHeader {
-    color: #4aaaa5;
+    color: brown;
     font-family: Georgia, Times, Times New Roman, serif;
     font-size: 18px;
     font-weight: bold;
-    line-height: 30px; /* Centering text vertically */
+    line-height: 35px;
 }
+
 #socialMediaPanelBodyPadding {
     padding: 0;
 }
-.container-fluid {
-    background: #ffffff;
-    height: 75px;
-    margin-left: 10%;
-    margin-right: 10%;
+
+
+/* Footer Styling */
+
+footer {
+    background: brown;
+    height: 50px;
 }
-.imageLabelBox{
-    background: #4aaaa5;
-    color: #ffffff;
-    line-height: 40px; /* Centering text vertically */
+
+#footerContent {
+    line-height: 50px;
     text-align: center;
-    width: 300px;
-}
-.imageLabel1{
-    color: #ffffff;
-    position: absolute;
-    top: 150px;
-}
-.imageLabel2{
-    position: absolute;
-    top: 150px;
-}
-.images {
-    float: left;
-    height:200px;
-    width: 300px;
-}
-.pagefooter {
-    background: #777777;
-    border-top: solid;
-    border-color: #4aaaa5;
-    border-width: 3px;
-    color: lightgray;
-    flex-shrink: 0; /* For sticky footer */
-    font-size: 12px;
-    line-height: 40px;  /* Centering text vertically */
-    text-align: center;
-}
-.portfolioRow {
-    clear: both;
-    overflow: auto;
-    position: relative;
-}
-.portfolioRow a img:hover {
-    opacity: 0.3;
 }

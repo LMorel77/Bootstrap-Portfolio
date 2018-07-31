@@ -5,32 +5,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <!-- Bootstrap 3 CSS and JS -->
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Custom CSS & JS -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script src="assets/javascript/app.js"></script>
+
+    <link rel="shortcut icon" href="assets/images/favicon2.jpg">
     <title>About Me</title>
 </head>
 
 <body>
-    <nav id="navBar" class="navbar navbar-default">
-        <div id="navContent" class="container-fluid">
-            <div class="navbar-header">
-                <h1 id="logoHeader" class="navbar-brand">Luis Morel</h1>
-            </div>
-
-            <div id="links" class="nav navbar-nav navbar-right">
-                <a href="index.html">About</a> |
-                <a href="portfolio.html">Portfolio</a> |
-                <a href="contact.html">Contact</a>
-            </div>
+    <nav id="navBar">
+        <div id="devName">
+            <h1>Developer Cat</h1>
+        </div>
+        <div id="navLinks">
+            <a href="index.html">About</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contact.html">Contact</a>
         </div>
     </nav>
-    <div id="aboutMe" class="container-fluid">
+
+    <div class="container-fluid contentWrapper">
         <div class="row">
             <div class="col-md-12">
                 <h1 id="aboutMeHeader">About Me</h1>
                 <hr>
-                <img id="aboutMeImg" src="assets/images/cats04.png" alt="My Photo">
+                <img id="aboutMeImg" src="assets/images/intelligent.jpg" alt="My Photo">
                 <p>
                     Spicy jalapeno bacon ipsum dolor amet fatback ham hock pancetta, buffalo tenderloin strip steak corned beef cow jerky ribeye
                     boudin meatloaf filet mignon. Tongue andouille hamburger short ribs, pig filet mignon prosciutto pork
@@ -53,11 +59,12 @@
         </div>
     </div>
     <br>
-    <div id="pagefooter" class="panel panel-default">
-        <div id="pagefooter" class="panel-footer">
+
+    <footer>
+        <div id="footerContent">
             <a href="index.html">Copyright &copy; 2018 Luis Morel</a>
         </div>
-    </div>
+    </footer>
 
 </body>
 

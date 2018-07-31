@@ -5,27 +5,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <!-- Bootstrap 3 CSS and JS -->
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Custom CSS & JS -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script src="assets/javascript/app.js"></script>
+
+    <link rel="shortcut icon" href="assets/images/favicon2.jpg">
     <title>Portfolio</title>
 </head>
 
 <body>
-    <nav id="navBar" class="navbar navbar-default">
-        <div id="navContent" class="container-fluid">
-            <div class="navbar-header">
-                <h1 id="logoHeader" class="navbar-brand">Luis Morel</h1>
-            </div>
-
-            <div id="links" class="nav navbar-nav navbar-right">
-                <a href="index.html">About</a> |
-                <a href="portfolio.html">Portfolio</a> |
-                <a href="contact.html">Contact</a>
-            </div>
+    <nav id="navBar">
+        <div id="devName">
+            <h1>Developer Cat</h1>
+        </div>
+        <div id="navLinks">
+            <a href="index.html">About</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contact.html">Contact</a>
         </div>
     </nav>
-    <div id="portfolio" class="container-fluid">
+
+    <div class="container-fluid contentWrapper">
         <div class="row">
             <div class="col-md-12">
                 <h1 id="portfolioHeader">Portfolio</h1>
@@ -33,74 +39,67 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-5">
-                <div class="portfolioRow">
-                    <a href="#">
-                        <img class="images" src="assets/images/cats01.jpg" alt=PortfolioImage1>
-                    </a>
-                    <div class="imageLabelBox imageLabel1">
-                        Sage Cat
+            <div class="col-md-12">
+                <div class="projectWrapper" align="center">
+                    <div class="project">
+                        <a href="#">
+                            <img class="images" src="assets/images/sage.jpg" alt=PortfolioImage>
+                        </a>
+                        <div class="imageLabel">Sage</div>
+                    </div>
+                    <div class="project">
+                        <a href="#">
+                            <img class="images" src="assets/images/thirsty.jpg" alt=PortfolioImage2>
+                        </a>
+                        <div class="imageLabel">Thirsty</div>
+                    </div>
+                    <div class="project">
+                        <a href="#">
+                            <img class="images" src="assets/images/hitchhiker.jpg" alt=PortfolioImage2>
+                        </a>
+                        <div class="imageLabel">Hitchhiker</div>
+                    </div>
+                    <div class="project">
+                        <a href="#">
+                            <img class="images" src="assets/images/ambassador.jpg" alt=PortfolioImage2>
+                        </a>
+                        <div class="imageLabel">Ambassador</div>
+                    </div>
+                    <div class="project">
+                        <a href="#">
+                            <img class="images" src="assets/images/burrito.jpg" alt=PortfolioImage2>
+                        </a>
+                        <div class="imageLabel">Burrito</div>
+                    </div>
+                    <div class="project">
+                        <a href="#">
+                            <img class="images" src="assets/images/saavy.jpg" alt=PortfolioImage2>
+                        </a>
+                        <div class="imageLabel">Saavy</div>
+                    </div>
+                    <div class="project">
+                        <a href="#">
+                            <img class="images" src="assets/images/neighborly.jpg" alt=PortfolioImage2>
+                        </a>
+                        <div class="imageLabel">Neighborly</div>
+                    </div>
+                    <div class="project">
+                        <a href="#">
+                            <img class="images" src="assets/images/terrified.jpg" alt=PortfolioImage2>
+                        </a>
+                        <div class="imageLabel">Terrified</div>
                     </div>
                 </div>
-                <br>
-            </div>
-            <div class="col-md-5">
-                <div class="portfolioRow">
-                    <a href="#">
-                        <img class="images" src="assets/images/cats02.jpg" alt=PortfolioImage2>
-                    </a>
-                    <div class="imageLabelBox imageLabel2">
-                        Neighborly Cat
-                    </div>
-                </div>
-                <br>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-5">
-                <div class="portfolioRow">
-                    <a href="#">
-                        <img class="images" src="assets/images/cats03.jpg" alt=PortfolioImage3>
-                    </a>
-                    <div class="imageLabelBox imageLabel1">
-                        Grouchy Cat
-                    </div>
-                </div>
-                <br>
-            </div>
-            <div class="col-md-5">
-                <div class="portfolioRow">
-                    <a href="#">
-                        <img class="images" src="assets/images/cats05.jpg" alt=PortfolioImage4>
-                    </a>
-                    <div class="imageLabelBox imageLabel2">
-                        Travel Cat
-                    </div>
-                </div>
-                <br>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-5">
-                <div class="portfolioRow">
-                    <a href="#">
-                        <img class="images" src="assets/images/cats06.jpg" alt=PortfolioImage5>
-                    </a>
-                    <div class="imageLabelBox imageLabel1">
-                        Perplexed Cat
-                    </div>
-                </div>
-                <br>
             </div>
         </div>
     </div>
-
     <br>
-    <div id="pagefooter" class="panel panel-default">
-        <div id="pagefooter" class="panel-footer">
+
+    <footer>
+        <div id="footerContent">
             <a href="index.html">Copyright &copy; 2018 Luis Morel</a>
         </div>
-    </div>
+    </footer>
 
 </body>
 

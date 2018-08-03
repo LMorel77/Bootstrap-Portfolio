@@ -126,7 +126,7 @@ hr {
 
 .images {
     border-radius: 20px 20px 0 0;
-    height:175px;
+    height: 175px;
     width: 275px;
 }
 
@@ -273,6 +273,7 @@ footer {
     text-align: center;
 }
 
+
 /* Responsive Design */
 
 @media screen and (min-width: 300px) and (max-width: 768px) {
@@ -312,10 +313,23 @@ footer {
     }
 
     /* 'About Me' Page */
+
     #aboutMeImg {
         margin: 0 1em 1em 0;
     }
+
+    /* 'Portfolio' Page */
+
+    .images {
+        height: 150px;
+        width: 225px;
+    }
+    
+    .imageLabel{
+        width: 225px;
+    }
 }
+
 
 /* Breakpoint/Viewport Reference
 
